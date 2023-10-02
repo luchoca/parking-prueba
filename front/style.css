@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: #5470b9;
+}
+.contenedor {
+  width: 100%;
+}
+.titulo {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px 0;
+  background-color: #b4d7f0;
+  color: #2a2929;
+  box-shadow: 2px 18px 11px -7px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 2px 18px 11px -7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 18px 11px -7px rgba(0, 0, 0, 0.3);
+  margin-bottom: 5%;
+}
+
+.parking-vacio {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  padding: 20px 0;
+  color: #f22a2a;
+}
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#formulario-crear {
+  margin-top: 30px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #3a92f0;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  background-color: #303030;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  display: inline-block;
+  width: calc(20% - 20px);
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+li:nth-child(5n) {
+  margin-right: 0;
+}
+
+li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.boton-eliminar {
+  background-color: #93bbe6;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+.boton-eliminar:hover {
+  background-color: #c82333;
+}
+#mensaje-lleno {
+  background-color: #f44336;
+  color: rgb(185, 185, 185);
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.titulo-parking {
+  text-align: center;
+  margin-top: 10%;
+}
+
+#edificio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1%;
+}
+
+.piso {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lugar {
+  width: 110px;
+  height: 140px;
+  border: 1px solid #000;
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.lugar.ocupado {
+  text-align: center;
+}
+footer {
+  background-color: #d6eeff;
+  color: rgb(72, 72, 72);
+  text-align: center;
+  padding: 20px 0;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.ir-parking {
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+  color: #000;
+}
+button {
+  margin-top: 15px;
+  background-color: #ff4e2b;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 80%;
+}
+
+@media (max-width: 1295px) {
+  .lugar {
+    width: 90px;
+    height: 110px;
+    justify-content: center;
+  }
+  .piso {
+    justify-content: center;
+  }
+  button {
+    font-size: 10px;
+    padding: 8px;
+  }
+}
+@media (max-width: 1064px) {
+  .lugar {
+    width: 80px;
+    height: 100px;
+    justify-content: center;
+  }
+  .piso {
+    justify-content: center;
+  }
+  button {
+    font-size: 10px;
+    padding: 8px;
+  }
+}
+@media (max-width: 960px) {
+  .lugar {
+    width: 75px;
+    height: 95px;
+    justify-content: center;
+  }
+  .piso {
+    justify-content: center;
+  }
+  button {
+    font-size: 10px;
+    padding: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .lugar {
+    width: 70px;
+    height: 90px;
+  }
+  .piso {
+    justify-content: center;
+  }
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .piso {
+    justify-content: center;
+  }
+  button {
+    width: 100%;
+  }
+}
