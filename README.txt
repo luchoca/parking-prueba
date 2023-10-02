@@ -1,8 +1,8 @@
-# Proyecto de Estacionamiento - README
+#Proyecto de Estacionamiento - README
 
 Este proyecto de estacionamiento te permite registrar vehículos y asignarles lugares en un estacionamiento simulado con 5 pisos y 10 lugares por piso, para un total de 50 lugares disponibles. El proyecto utiliza PHP, MySQL y JavaScript para lograr esta funcionalidad.
 
-## Requisitos previos
+##Requisitos previos
 
 Antes de ejecutar este proyecto, asegúrate de tener instalado lo siguiente:
 
@@ -11,7 +11,7 @@ Antes de ejecutar este proyecto, asegúrate de tener instalado lo siguiente:
 - Editor de código (recomendado: Visual Studio Code).
 - PHP (descargar e instalar)
 
-## Instrucciones de configuración
+##Instrucciones de configuración
 
 Sigue estos pasos para configurar y ejecutar el proyecto:
 
@@ -22,6 +22,7 @@ Sigue estos pasos para configurar y ejecutar el proyecto:
    ```shell
    git clone https://github.com/luchoca/parking-prueba
 
+		(rama master)
 
 2. Abre tu aplicación MAMP y asegúrate de que los servicios de Apache y MySQL estén en ejecución.
 
